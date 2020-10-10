@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package v1.product;
+option go_package = "github.com/gufranmirza/microservice-proto/proto/v1/product/v1product";
+
+// Product message structure
+message Product  {
+	string id = 1; // id of the product
+    string name = 2; // name of the product
+    string description = 3; // product description
+	string manufacturer = 4; // product manufacturer 
+    string price = 5;  // product price
+    bool in_stock = 6; // product is in stock or not
+    ProductCategory category = 7; // category of the product it belogs to 
+}
+
+// ProductCategory is the category a product belogs to
+enum ProductCategory {
+    UNSPECIFIED = 0; // Product has not any category unspecified
+    BOOKS_AND_LITERATURE = 1; // Books and literature
+    FOOD_AND_DRINK = 2; // Food and drink
+    COMPUTERS_AND_ELECTONICS = 3; // Computers and electronic 
+}
