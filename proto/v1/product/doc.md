@@ -5,6 +5,7 @@
 
 - [product.proto](#product.proto)
     - [Product](#v1.product.Product)
+    - [Products](#v1.product.Products)
   
     - [ProductCategory](#v1.product.ProductCategory)
   
@@ -34,6 +35,21 @@ Product message structure
 | price | [string](#string) |  | product price |
 | in_stock | [bool](#bool) |  | product is in stock or not |
 | category | [ProductCategory](#v1.product.ProductCategory) |  | category of the product it belogs to |
+
+
+
+
+
+
+<a name="v1.product.Products"></a>
+
+### Products
+Products contains the list of products
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| products | [Product](#v1.product.Product) | repeated |  |
 
 
 

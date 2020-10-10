@@ -21,3 +21,8 @@ enum ProductCategory {
     FOOD_AND_DRINK = 2; // Food and drink
     COMPUTERS_AND_ELECTONICS = 3; // Computers and electronic 
 }
+
+// Products contains the list of products
+message Products  {
+	repeated Product products  = 1;
+}
