@@ -32,7 +32,7 @@ const (
 	ProductCategory_UNSPECIFIED              ProductCategory = 0 // Product has not any category unspecified
 	ProductCategory_BOOKS_AND_LITERATURE     ProductCategory = 1 // Books and literature
 	ProductCategory_FOOD_AND_DRINK           ProductCategory = 2 // Food and drink
-	ProductCategory_COMPUTERS_AND_ELECTONICS ProductCategory = 3 // Computers and electronic product
+	ProductCategory_COMPUTERS_AND_ELECTONICS ProductCategory = 3 // Computers and electronic
 )
 
 // Enum value maps for ProductCategory.

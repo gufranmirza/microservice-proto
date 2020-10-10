@@ -3,57 +3,37 @@
 
 ## Table of Contents
 
-- [product.proto](#product.proto)
-    - [Product](#v1.product.Product)
-  
-    - [ProductCategory](#v1.product.ProductCategory)
+- [error.proto](#error.proto)
+    - [ErrorResponse](#v1.error.ErrorResponse)
   
 - [Scalar Value Types](#scalar-value-types)
 
 
 
-<a name="product.proto"></a>
+<a name="error.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## product.proto
+## error.proto
 
 
 
-<a name="v1.product.Product"></a>
+<a name="v1.error.ErrorResponse"></a>
 
-### Product
-Product message structure
+### ErrorResponse
+
 
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| id | [string](#string) |  | id of the product |
-| name | [string](#string) |  | name of the product |
-| description | [string](#string) |  | product description |
-| manufacturer | [string](#string) |  | product manufacturer |
-| price | [string](#string) |  | product price |
-| in_stock | [bool](#bool) |  | product is in stock or not |
-| category | [ProductCategory](#v1.product.ProductCategory) |  | category of the product it belogs to |
+| StatusText | [string](#string) |  | user-level status message |
+| Code | [int32](#int32) |  | application-specific error code |
+| Error | [string](#string) |  | application-level error message, for debugging |
 
 
 
 
 
  
-
-
-<a name="v1.product.ProductCategory"></a>
-
-### ProductCategory
-ProductCategory is the category a product belogs to
-
-| Name | Number | Description |
-| ---- | ------ | ----------- |
-| UNSPECIFIED | 0 | Product has not any category unspecified |
-| BOOKS_AND_LITERATURE | 1 | Books and literature |
-| FOOD_AND_DRINK | 2 | Food and drink |
-| COMPUTERS_AND_ELECTONICS | 3 | Computers and electronic |
-
 
  
 
